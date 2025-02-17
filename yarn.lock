@@ -10998,6 +10998,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icon@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "react-icon@npm:1.0.0"
+  peerDependencies:
+    babel-runtime: ^5.3.3
+    react: ">=0.12.0"
+  checksum: 3c36c9a2ad076e480c352ba4e4006aba3ff7d57f2597ae6daad5becc18d9ceabe098234ddef6fcd1c9886cf751059ff487e49ec6ecdf7bc8bdac6a0deec4d033
+  languageName: node
+  linkType: hard
+
+"react-icons@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "react-icons@npm:5.3.0"
+  peerDependencies:
+    react: "*"
+  checksum: 3aa5f50e05aafc6d31e0d995fe0d98560069aa88717b24ce8aaa082a7e7b20ca95e1e19d847ed6e52d658a5a30e15826af20d7554bf993a743edd55586db62e3
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -12602,9 +12621,13 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
+    eslint-config-react-app: ^7.0.1
     react: ^18.3.1
     react-dom: ^18.3.1
+    react-icon: ^1.0.0
+    react-icons: ^5.3.0
     react-scripts: 5.0.1
+    uuid: ^11.0.3
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -12996,6 +13019,15 @@ __metadata:
   version: 1.0.1
   resolution: "utils-merge@npm:1.0.1"
   checksum: c81095493225ecfc28add49c106ca4f09cdf56bc66731aa8dabc2edbbccb1e1bfe2de6a115e5c6a380d3ea166d1636410b62ef216bb07b3feb1cfde1d95d5080
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "uuid@npm:11.0.3"
+  bin:
+    uuid: dist/esm/bin/uuid
+  checksum: 646181c77e8b8df9bd07254faa703943e1c4d5ccde7d080312edf12f443f6c5750801fd9b27bf2e628594182165e6b1b880c0382538f7eca00b26622203741dc
   languageName: node
   linkType: hard
 

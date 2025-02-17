@@ -1,0 +1,36 @@
+ul {
+  padding: 0;
+}
+
+.App {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+.list:first-of-type {
+  border-top: 1px solid black;
+}
+
+.list {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.text {
+  flex: 1 1 0;
+}
+
+.delete {
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.bottom {
+  text-align: center;
+}

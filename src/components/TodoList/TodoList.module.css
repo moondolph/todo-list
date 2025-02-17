@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.5rem 0;
+  height: 300px;
+}
