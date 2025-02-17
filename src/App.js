@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Appex from "./Appex";
+// import Appex from "./Appex";
 import Header from "./components/Header/Header";
 import TodoList from "./components/TodoList/TodoList";
 import { DarkModeProvider } from "./context/DarkModeContext";
