@@ -5,8 +5,10 @@ import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
-    { id: "123", text: "장보기", status: "active" },
-    { id: "124", text: "공부하기", status: "active" },
+    { id: "123", text: "Add your first task", status: "To-Do" },
+    { id: "124", text: "最初のタスクを追加しましょう", status: "To-Do" },
+    { id: "125", text: "첫 할 일을 추가해보세요", status: "To-Do" },
+    { id: "126", text: "添加你的第一个任务吧。", status: "To-Do" },
   ]);
 
   const handleAdd = (todo) => setTodos([...todos, todo]);
@@ -18,8 +20,8 @@ export default function TodoList({ filter }) {
   return (
     <section className={styles.container}>
       <ul className={styles.list}>
-        {filtered.map((todo) => (
-          <Todo key={todo.id} todo={todo} onUpdate={handleUpdate} onDelete={handleDelete}>
+        {filtered.map((todo, index) => (
+          <Todo index={index + 1} key={todo.id} todo={todo} onUpdate={handleUpdate} onDelete={handleDelete}>
             {todo.text}
           </Todo>
         ))}
@@ -29,8 +31,9 @@ export default function TodoList({ filter }) {
   );
 }
 
+/* 🔽 보조함수는 아래쪽 */
 function getFilteredItems(todos, filter) {
-  if (filter === "all") {
+  if (filter === "All") {
     return todos;
   }
   return todos.filter((todo) => todo.status === filter);

@@ -6,6 +6,7 @@
   --color-accent: #f16e03;
 
   --color-body-bg: var(--color-gray-dark);
+  --color-app-bg: var(--color-gray);
   --color-bg: var(--color-gray);
   --color-bg-highlight: var(--color-gray-dark);
   --color-text: var(--color-black);
@@ -16,9 +17,10 @@
 
 html.dark {
   --color-body-bg: var(--color-black-light);
-  --color-bg: var(--color-secondary);
+  --color-app-bg: var(--color-black-light);
+  --color-bg: var(--color-gray);
   --color-bg-variant: var(--color-secondary-variant);
-  --color-text: var(--color-primary);
+  --color-text: var(--color-gray);
   --color-text-variant: var(--color-primary-variant);
   --color-accent: #e8d90f;
 }
@@ -44,10 +46,6 @@ body {
 #root {
   width: 100%;
   max-width: 500px;
-  border-radius: 1rem;
-  display: flex;
-  background-color: white;
-  flex-direction: column;
 }
 
 code {

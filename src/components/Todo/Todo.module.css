@@ -2,20 +2,32 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
-  padding: 0.65rem;
+  padding: 0.25rem 0.65rem;
   background-color: var(--color-bg);
   border-radius: 0.5rem;
+  border: 1px solid var(--color-black-light);
+
+  min-width: 0;
 }
 
 .checkbox {
   width: 1rem;
   height: 1rem;
+  cursor: pointer;
 }
 
 .text {
   flex: 1 1 auto;
   height: 100%;
-  color: var(--color-text);
+  cursor: pointer;
+  overflow-wrap: anywhere; /*공백 없는 문자열 강제 줄바꿈*/
+  word-break: break-word; /* 구형 브라우저 호환 */
+  hyphens: auto; /* 하이픈 단어 체계적 분할(가능한 경우) */
+  white-space: normal; /* 줄바꿈 허용 */
+
+  display: block;
+  width: 100%;
+  padding-right: 1rem; /* 휴지통 버튼 폭만큼 여유 */
 }
 
 .button {
@@ -25,4 +37,8 @@
   border-radius: 100%;
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* 클릭 시 커서 변경 */
 }

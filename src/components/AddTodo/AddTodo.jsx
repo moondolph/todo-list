@@ -12,13 +12,13 @@ export default function AddTodo({ onAdd }) {
       setText("");
       return;
     }
-    onAdd({ id: uuidv4(), text: todo, status: "active" });
+    onAdd({ id: uuidv4(), text: todo, status: "TO-DO" });
     setText("");
   };
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <input className={styles.input} type="text" placeholder="Type To-do" value={text} onChange={handleChange} />
-      <button className={styles.button}>Add</button>
+      <input className={styles.input} type="text" placeholder="Add a task" value={text} onChange={handleChange} />
+      <button className={styles.button}>ADD</button>
     </form>
   );
 }

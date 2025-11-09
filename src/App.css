@@ -1,0 +1,9 @@
+.app-container {
+  border-radius: 1rem;
+  display: flex;
+  background-color: var(--color-app-bg);
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  gap: 1rem;
+}
