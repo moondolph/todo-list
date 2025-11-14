@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import AddTodo from "../AddTodo/AddTodo";
 import Todo from "../Todo/Todo";
 import styles from "./TodoList.module.css";
+import { STATUS } from "../../App";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
-    { id: "123", text: "Add your first task", status: "To-Do" },
-    { id: "124", text: "最初のタスクを追加しましょう", status: "To-Do" },
-    { id: "125", text: "첫 할 일을 추가해보세요", status: "To-Do" },
-    { id: "126", text: "添加你的第一个任务吧。", status: "To-Do" },
+    { id: "123", text: "Add your first task", status: STATUS.TODO },
+    { id: "124", text: "最初のタスクを追加しましょう", status: STATUS.TODO },
+    { id: "125", text: "첫 할 일을 추가해보세요", status: STATUS.TODO },
+    { id: "126", text: "添加你的第一个任务吧。", status: STATUS.TODO },
   ]);
 
   const handleAdd = (todo) => setTodos([...todos, todo]);
@@ -33,8 +34,6 @@ export default function TodoList({ filter }) {
 
 /* 🔽 보조함수는 아래쪽 */
 function getFilteredItems(todos, filter) {
-  if (filter === "All") {
-    return todos;
-  }
-  return todos.filter((todo) => todo.status === filter);
+  if (filter.status === STATUS.ALL) return todos;
+  return todos.filter((todo) => todo.status === filter.status);
 }
